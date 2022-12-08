@@ -255,7 +255,7 @@
                 "Configuration": {
                   "Owner": "oriemcintosh",
                   "Repo": "aws-cdk_pipelines_demo",
-                  "Branch": "main",
+                  "Branch": "dev",
                   "OAuthToken": "{{resolve:secretsmanager:lambda_container_cdk_pipeline_github:SecretString:github::}}",
                   "PollForSourceChanges": false
                 },
@@ -1072,7 +1072,7 @@
             {
               "Name": "IMAGE_TAG",
               "Type": "PLAINTEXT",
-              "Value": "latest-fd6477e96f19"
+              "Value": "latest-c2b6b4cbea54"
             },
             {
               "Name": "AWS_ACCOUNT_ID",

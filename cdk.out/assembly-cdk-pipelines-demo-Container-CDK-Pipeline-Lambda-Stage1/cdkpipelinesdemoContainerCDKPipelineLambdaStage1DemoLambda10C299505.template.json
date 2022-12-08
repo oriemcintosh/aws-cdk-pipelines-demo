@@ -57,7 +57,7 @@
                 {
                   "Fn::ImportValue": "ecr-repo-name"
                 },
-                ":latest-fd6477e96f19"
+                ":latest-c2b6b4cbea54"
               ]
             ]
           }
@@ -68,7 +68,7 @@
             "Arn"
           ]
         },
-        "Description": "Function generated on 2022-12-08 18:10:04.196439",
+        "Description": "Function generated on 2022-12-08 18:13:59.489496",
         "MemorySize": 1024,
         "PackageType": "Image",
         "Timeout": 30

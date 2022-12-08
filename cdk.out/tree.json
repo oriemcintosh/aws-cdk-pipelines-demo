@@ -385,7 +385,7 @@
                                 "configuration": {
                                   "Owner": "oriemcintosh",
                                   "Repo": "aws-cdk_pipelines_demo",
-                                  "Branch": "main",
+                                  "Branch": "dev",
                                   "OAuthToken": "{{resolve:secretsmanager:lambda_container_cdk_pipeline_github:SecretString:github::}}",
                                   "PollForSourceChanges": false
                                 },
@@ -1412,7 +1412,7 @@
                                         {
                                           "name": "IMAGE_TAG",
                                           "type": "PLAINTEXT",
-                                          "value": "latest-fd6477e96f19"
+                                          "value": "latest-c2b6b4cbea54"
                                         },
                                         {
                                           "name": "AWS_ACCOUNT_ID",
@@ -2053,7 +2053,7 @@
                                     {
                                       "Fn::ImportValue": "ecr-repo-name"
                                     },
-                                    ":latest-fd6477e96f19"
+                                    ":latest-c2b6b4cbea54"
                                   ]
                                 ]
                               }
@@ -2064,7 +2064,7 @@
                                 "Arn"
                               ]
                             },
-                            "description": "Function generated on 2022-12-08 18:10:04.196439",
+                            "description": "Function generated on 2022-12-08 18:13:59.489496",
                             "memorySize": 1024,
                             "packageType": "Image",
                             "timeout": 30

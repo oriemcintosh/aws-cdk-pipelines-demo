@@ -1,0 +1,187 @@
+{
+  "version": "13.0.0",
+  "artifacts": {
+    "cdkpipelinesdemoContainerCDKPipelineLambdaStage1DemoLambda10C299505.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "cdkpipelinesdemoContainerCDKPipelineLambdaStage1DemoLambda10C299505.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "cdkpipelinesdemoContainerCDKPipelineLambdaStage1DemoLambda10C299505": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "cdkpipelinesdemoContainerCDKPipelineLambdaStage1DemoLambda10C299505.template.json",
+        "validateOnSynth": true,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/b33156485109c20e48e0070099e5e3065b8d455904c87d3cf4d55acd6b31c313.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "cdkpipelinesdemoContainerCDKPipelineLambdaStage1DemoLambda10C299505.assets"
+        ],
+        "stackName": "Container-CDK-Pipeline-Lambda-Stage1-Demo-Lambda1"
+      },
+      "dependencies": [
+        "cdkpipelinesdemoContainerCDKPipelineLambdaStage1DemoLambda10C299505.assets"
+      ],
+      "metadata": {
+        "/cdk-pipelines-demo/Container-CDK-Pipeline-Lambda-Stage1/Demo-Lambda1/LambdaContainerFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaContainerFunctionServiceRole78BB0746",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "new Function (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/aws-lambda/lib/function.js:80:35)",
+              "new DockerImageFunction (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/aws-lambda/lib/image-function.js:58:9)",
+              "/tmp/tmp7_1z04bd/lib/program.js:8367:58",
+              "Kernel._wrapSandboxCode (/tmp/tmp7_1z04bd/lib/program.js:8795:24)",
+              "Kernel._create (/tmp/tmp7_1z04bd/lib/program.js:8367:34)",
+              "Kernel.create (/tmp/tmp7_1z04bd/lib/program.js:8108:29)",
+              "KernelHost.processRequest (/tmp/tmp7_1z04bd/lib/program.js:9692:36)",
+              "KernelHost.run (/tmp/tmp7_1z04bd/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/tmp/tmp7_1z04bd/lib/program.js:9656:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/cdk-pipelines-demo/Container-CDK-Pipeline-Lambda-Stage1/Demo-Lambda1/LambdaContainerFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaContainerFunctionB0928A51",
+            "trace": [
+              "new Function (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/aws-lambda/lib/function.js:136:26)",
+              "new DockerImageFunction (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/aws-lambda/lib/image-function.js:58:9)",
+              "/tmp/tmp7_1z04bd/lib/program.js:8367:58",
+              "Kernel._wrapSandboxCode (/tmp/tmp7_1z04bd/lib/program.js:8795:24)",
+              "Kernel._create (/tmp/tmp7_1z04bd/lib/program.js:8367:34)",
+              "Kernel.create (/tmp/tmp7_1z04bd/lib/program.js:8108:29)",
+              "KernelHost.processRequest (/tmp/tmp7_1z04bd/lib/program.js:9692:36)",
+              "KernelHost.run (/tmp/tmp7_1z04bd/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/tmp/tmp7_1z04bd/lib/program.js:9656:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/cdk-pipelines-demo/Container-CDK-Pipeline-Lambda-Stage1/Demo-Lambda1/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/synthesis.js:139:9",
+              "visit (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/synthesis.js:200:9)",
+              "visit (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/synthesis.js:197:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:5)",
+              "Object.synthesize (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "Stage.synth (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "Object.pipelineSynth (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/pipelines/lib/private/construct-internals.js:25:18)",
+              "StageDeployment.fromStage (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/pipelines/lib/blueprint/stage-deployment.js:36:48)",
+              "Wave.addStage (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/pipelines/lib/blueprint/wave.js:40:56)",
+              "CodePipeline.addStage (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:57:46)",
+              "/tmp/tmp7_1z04bd/lib/program.js:8183:134",
+              "Kernel._wrapSandboxCode (/tmp/tmp7_1z04bd/lib/program.js:8795:24)",
+              "/tmp/tmp7_1z04bd/lib/program.js:8183:107",
+              "Kernel._ensureSync (/tmp/tmp7_1z04bd/lib/program.js:8776:28)",
+              "Kernel.invoke (/tmp/tmp7_1z04bd/lib/program.js:8183:34)",
+              "KernelHost.processRequest (/tmp/tmp7_1z04bd/lib/program.js:9692:36)",
+              "KernelHost.run (/tmp/tmp7_1z04bd/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/tmp/tmp7_1z04bd/lib/program.js:9656:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/cdk-pipelines-demo/Container-CDK-Pipeline-Lambda-Stage1/Demo-Lambda1/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:30:35)",
+              "/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/synthesis.js:139:9",
+              "visit (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/synthesis.js:200:9)",
+              "visit (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/synthesis.js:197:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:5)",
+              "Object.synthesize (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "Stage.synth (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "Object.pipelineSynth (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/pipelines/lib/private/construct-internals.js:25:18)",
+              "StageDeployment.fromStage (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/pipelines/lib/blueprint/stage-deployment.js:36:48)",
+              "Wave.addStage (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/pipelines/lib/blueprint/wave.js:40:56)",
+              "CodePipeline.addStage (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:57:46)",
+              "/tmp/tmp7_1z04bd/lib/program.js:8183:134",
+              "Kernel._wrapSandboxCode (/tmp/tmp7_1z04bd/lib/program.js:8795:24)",
+              "/tmp/tmp7_1z04bd/lib/program.js:8183:107",
+              "Kernel._ensureSync (/tmp/tmp7_1z04bd/lib/program.js:8776:28)",
+              "Kernel.invoke (/tmp/tmp7_1z04bd/lib/program.js:8183:34)",
+              "KernelHost.processRequest (/tmp/tmp7_1z04bd/lib/program.js:9692:36)",
+              "KernelHost.run (/tmp/tmp7_1z04bd/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/tmp/tmp7_1z04bd/lib/program.js:9656:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/cdk-pipelines-demo/Container-CDK-Pipeline-Lambda-Stage1/Demo-Lambda1/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion",
+            "trace": [
+              "addBootstrapVersionRule (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/stack-synthesizers/default-synthesizer.js:435:19)",
+              "DefaultStackSynthesizer.synthesize (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/stack-synthesizers/default-synthesizer.js:204:13)",
+              "/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/synthesis.js:155:35",
+              "visit (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/synthesis.js:200:9)",
+              "visit (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/synthesis.js:197:9)",
+              "synthesizeTree (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/synthesis.js:148:5)",
+              "Object.synthesize (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/synthesis.js:33:5)",
+              "Stage.synth (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "Object.pipelineSynth (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/pipelines/lib/private/construct-internals.js:25:18)",
+              "StageDeployment.fromStage (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/pipelines/lib/blueprint/stage-deployment.js:36:48)",
+              "Wave.addStage (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/pipelines/lib/blueprint/wave.js:40:56)",
+              "CodePipeline.addStage (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:57:46)",
+              "/tmp/tmp7_1z04bd/lib/program.js:8183:134",
+              "Kernel._wrapSandboxCode (/tmp/tmp7_1z04bd/lib/program.js:8795:24)",
+              "/tmp/tmp7_1z04bd/lib/program.js:8183:107",
+              "Kernel._ensureSync (/tmp/tmp7_1z04bd/lib/program.js:8776:28)",
+              "Kernel.invoke (/tmp/tmp7_1z04bd/lib/program.js:8183:34)",
+              "KernelHost.processRequest (/tmp/tmp7_1z04bd/lib/program.js:9692:36)",
+              "KernelHost.run (/tmp/tmp7_1z04bd/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/tmp/tmp7_1z04bd/lib/program.js:9656:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ],
+        "/cdk-pipelines-demo/Container-CDK-Pipeline-Lambda-Stage1/Demo-Lambda1/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion",
+            "trace": [
+              "addBootstrapVersionRule (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/stack-synthesizers/default-synthesizer.js:443:5)",
+              "DefaultStackSynthesizer.synthesize (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/stack-synthesizers/default-synthesizer.js:204:13)",
+              "/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/synthesis.js:155:35",
+              "visit (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/synthesis.js:200:9)",
+              "visit (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/synthesis.js:197:9)",
+              "synthesizeTree (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/synthesis.js:148:5)",
+              "Object.synthesize (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/private/synthesis.js:33:5)",
+              "Stage.synth (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "Object.pipelineSynth (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/pipelines/lib/private/construct-internals.js:25:18)",
+              "StageDeployment.fromStage (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/pipelines/lib/blueprint/stage-deployment.js:36:48)",
+              "Wave.addStage (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/pipelines/lib/blueprint/wave.js:40:56)",
+              "CodePipeline.addStage (/tmp/jsii-kernel-pg41V2/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:57:46)",
+              "/tmp/tmp7_1z04bd/lib/program.js:8183:134",
+              "Kernel._wrapSandboxCode (/tmp/tmp7_1z04bd/lib/program.js:8795:24)",
+              "/tmp/tmp7_1z04bd/lib/program.js:8183:107",
+              "Kernel._ensureSync (/tmp/tmp7_1z04bd/lib/program.js:8776:28)",
+              "Kernel.invoke (/tmp/tmp7_1z04bd/lib/program.js:8183:34)",
+              "KernelHost.processRequest (/tmp/tmp7_1z04bd/lib/program.js:9692:36)",
+              "KernelHost.run (/tmp/tmp7_1z04bd/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/tmp/tmp7_1z04bd/lib/program.js:9656:46)",
+              "process.processImmediate (node:internal/timers:471:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "cdk-pipelines-demo/Container-CDK-Pipeline-Lambda-Stage1/Demo-Lambda1"
+    }
+  }
+}

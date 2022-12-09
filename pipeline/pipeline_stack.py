@@ -41,11 +41,11 @@ class PipelineStack(core.Stack):
                 value=ecr_repo.repository_uri,
                 export_name="ecr-repo-uri")
 
-        github_repo='oriemcintosh/aws-cdk_pipelines_demo'
+        github_repo='oriemcintosh/aws-cdk-pipelines-demo'
 
         git_hub_commit = _pipelines.CodePipelineSource.git_hub(
                     github_repo,
-                    "main",
+                    "dev",
                     authentication=_cdk.SecretValue.secrets_manager(
                         "lambda_container_cdk_pipeline_github", json_field='github')
         )

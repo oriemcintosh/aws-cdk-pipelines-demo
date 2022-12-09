@@ -254,15 +254,15 @@
                 },
                 "Configuration": {
                   "Owner": "oriemcintosh",
-                  "Repo": "aws-cdk_pipelines_demo",
+                  "Repo": "aws-cdk-pipelines-demo",
                   "Branch": "dev",
                   "OAuthToken": "{{resolve:secretsmanager:lambda_container_cdk_pipeline_github:SecretString:github::}}",
                   "PollForSourceChanges": false
                 },
-                "Name": "oriemcintosh_aws-cdk_pipelines_demo",
+                "Name": "oriemcintosh_aws-cdk-pipelines-demo",
                 "OutputArtifacts": [
                   {
-                    "Name": "oriemcintosh_aws-cdk_pipelines_demo_Source"
+                    "Name": "oriemcintosh_aws-cdk-pipelines-demo_Source"
                   }
                 ],
                 "RunOrder": 1
@@ -287,7 +287,7 @@
                 },
                 "InputArtifacts": [
                   {
-                    "Name": "oriemcintosh_aws-cdk_pipelines_demo_Source"
+                    "Name": "oriemcintosh_aws-cdk-pipelines-demo_Source"
                   }
                 ],
                 "Name": "Synth",
@@ -355,7 +355,7 @@
                 },
                 "InputArtifacts": [
                   {
-                    "Name": "oriemcintosh_aws-cdk_pipelines_demo_Source"
+                    "Name": "oriemcintosh_aws-cdk-pipelines-demo_Source"
                   }
                 ],
                 "Name": "ContainerBuild",
@@ -493,7 +493,7 @@
         "aws:cdk:path": "cdk-pipelines-demo/Container_Pipeline/Pipeline/Resource"
       }
     },
-    "ContainerPipelineSourceoriemcintoshawscdkpipelinesdemoWebhookResourceACE50BEA": {
+    "ContainerPipelineSourceoriemcintoshawscdkpipelinesdemoWebhookResource78B06889": {
       "Type": "AWS::CodePipeline::Webhook",
       "Properties": {
         "Authentication": "GITHUB_HMAC",
@@ -506,7 +506,7 @@
             "MatchEquals": "refs/heads/{Branch}"
           }
         ],
-        "TargetAction": "oriemcintosh_aws-cdk_pipelines_demo",
+        "TargetAction": "oriemcintosh_aws-cdk-pipelines-demo",
         "TargetPipeline": {
           "Ref": "ContainerPipeline3FD96453"
         },
@@ -514,7 +514,7 @@
         "RegisterWithThirdParty": true
       },
       "Metadata": {
-        "aws:cdk:path": "cdk-pipelines-demo/Container_Pipeline/Pipeline/Source/oriemcintosh_aws-cdk_pipelines_demo/WebhookResource"
+        "aws:cdk:path": "cdk-pipelines-demo/Container_Pipeline/Pipeline/Source/oriemcintosh_aws-cdk-pipelines-demo/WebhookResource"
       }
     },
     "ContainerPipelineBuildSynthCdkBuildProjectRole9BCF6C91": {
@@ -1072,7 +1072,7 @@
             {
               "Name": "IMAGE_TAG",
               "Type": "PLAINTEXT",
-              "Value": "latest-c2b6b4cbea54"
+              "Value": "latest-d2a22a833da6"
             },
             {
               "Name": "AWS_ACCOUNT_ID",
